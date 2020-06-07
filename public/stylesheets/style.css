@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: 3rem 0rem;
+}
+
+header {
+  margin-bottom: 35px;
+  margin-top: -3rem;
+}
+
+nav.navbar {
+  border-bottom: 1px solid #ececec;
+}
+
+.navbar-brand {
+  font-family: 'Righteous', cursive;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  color: #1E0E62 !important;
+}
+
+a.nav-link.btn-purple {
+  border-radius: 50px;
+  font-weight: 600;
+  color: #FFFFFF !important; 
+}
+
+.btn-purple { 
+  color: #FFFFFF; 
+  background-color: #482BE7; 
+  border-color: #3217C8; 
+  border-radius: 50px;
+  font-weight: 600;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+} 
+ 
+.btn-purple:hover, 
+.btn-purple:focus, 
+.btn-purple:active, 
+.btn-purple.active, 
+.open .dropdown-toggle.btn-purple { 
+  color: #FFFFFF; 
+  background-color: #3217c8; 
+  border-color: #3217C8; 
+} 
+ 
+.btn-purple:active, 
+.btn-purple.active, 
+.open .dropdown-toggle.btn-purple { 
+  background-image: none; 
+} 
+ 
+.btn-purple.disabled, 
+.btn-purple[disabled], 
+fieldset[disabled] .btn-purple, 
+.btn-purple.disabled:hover, 
+.btn-purple[disabled]:hover, 
+fieldset[disabled] .btn-purple:hover, 
+.btn-purple.disabled:focus, 
+.btn-purple[disabled]:focus, 
+fieldset[disabled] .btn-purple:focus, 
+.btn-purple.disabled:active, 
+.btn-purple[disabled]:active, 
+fieldset[disabled] .btn-purple:active, 
+.btn-purple.disabled.active, 
+.btn-purple[disabled].active, 
+fieldset[disabled] .btn-purple.active { 
+  background-color: #482BE7; 
+  border-color: #3217C8; 
+} 
+ 
+.btn-purple .badge { 
+  color: #482BE7; 
+  background-color: #FFFFFF; 
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  color: #1e0e62 !important;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+
+.right-navbar {
+  margin-left: 0px !important;
+}
+
+.login-form, .register-form {
+  background: #fff;
+  padding: 8rem 6rem;
+  border-radius: 10px;
+}
+
+.logo-login-register-form {
+  margin-top: -40px;
+  margin-bottom: 40px;
+}
+
+a {
+  color: #1E0E62 !important;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.login-create-account {
+  margin-top: 60px;
+  margin-bottom: -60px;
+}
+
+.card-inside-title>h3 {
+  border-bottom: 1px solid #ececec;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+
+.card-inside-description {
+  text-align: justify;
+}
+
+.registration-error-messsages {
+  margin-top: 2rem;
+}
+
+.registration-errors-list{
+  padding: 0rem 0rem 0rem 1rem;
+  margin-bottom: 0rem;
+}

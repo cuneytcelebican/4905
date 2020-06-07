@@ -1,0 +1,50 @@
+<div class="col-md-6">
+    <div class="register-form">
+        <div class="logo-login-register-form">
+            {{>logo}}
+        </div>
+        <h1>{{title}}</h1>
+        <form action="/users/register" method="POST">
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <label for="passwordValidation">Confirm Password</label>
+                <input type="password" class="form-control" id="passwordValidation" name="passwordValidation">
+            </div>
+            <button type="submit" class="btn btn-purple">Register</button>
+        </form>
+        <div class="registration-error-messsages">
+            {{#if error_msg}}
+                <div class="alert alert-danger alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <ul class="registration-errors-list">
+                        {{#each error_msg}}
+                            <li><small>{{msg}}</small></li>
+                        {{/each}}
+                    </ul>
+                 </div>
+            {{/if}}
+        </div>
+        <div class="login-create-account">
+            <a href="/users/login">I have an account</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    header {
+        display: none;
+    }
+    body{
+        background: #E0EAFC;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    }
+</style>
